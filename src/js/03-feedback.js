@@ -5,8 +5,7 @@ const STORAGE_KEY = 'feedback-form-state';
 
 fillData()
 
-form.addEventListener(
-  'input',throttle(() => saveData(), 500));
+form.addEventListener('input',throttle(() => saveData(), 500));
 form.addEventListener("submit", onSubmit)
 
 function saveData() {
