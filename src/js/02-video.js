@@ -14,8 +14,6 @@ const player = new Player(iframe);
 
 const CURRENT_TIME = 'videoplayer-current-time';
 let parsedTime = JSON.parse(localStorage.getItem(CURRENT_TIME_KEY)) ?? 0;
-
-
 // player.on('play', );
 
 player.on('timeupdate', throttle((data) => {
